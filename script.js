@@ -9,10 +9,10 @@
 // 4. press equal sign - make a calculation 
 
 
-const firstNumber  
-const secondNumber  
+let firstNumber  
+let secondNumber  
 let step = 0;
-const operation  
+let operation  
 let result = 0;
 
 // you need to keep steps of your steps in operations and your result
