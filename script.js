@@ -19,16 +19,31 @@ let result = 0;
 
 // one way we can collect our information for operations is to put our numbers into an array
 
+const numArray = [];
+const secondNumArray = [];
+
 const display = document.getElementById('display');
 
 
 function getNumber(num) {
-    display.value = num;
+    if(step === 0 || step === 1){
+        numArray.push(num) // [1,2,5]
+        step = 1
+        firstNumber = Number(numArray.join('')) // merges array into one string
+        display.value = firstNumber 
+    } else if (step === 2){
+        secondNumArray.push(num)
+        secondNumber = Number(secondNumArray.join(''))
+        display.value = secondNumber
+
+    }
+
 }
 
 
 function getOperator(op) {
-    console.log(op)
+    step = 2
+    operation = op
 }
 
 function clearDisplay() {
