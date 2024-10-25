@@ -45,7 +45,7 @@ button {
 
 .buttons {
     margin: auto;
-    width: 450px;
+    width: 500px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
